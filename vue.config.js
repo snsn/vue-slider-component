@@ -53,6 +53,7 @@ module.exports = {
         .test(/\.md/)
         .use('vue-loader')
         .loader('vue-loader')
+        .exteranls({ vue: 'Vue' })
         .end()
         .use('vue-markdown-loader')
         .loader('vue-markdown-loader/lib/markdown-compiler')
